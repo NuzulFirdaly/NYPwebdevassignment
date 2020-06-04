@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="newstyle.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top"> <!-- remember to make bg transparent -->
+        <h1 class="logo"><a href="firstpage.html">Nuzul Firdaly</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item "><a class="nav-link" href="firstpage.html#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link"href="works.html">Works</a></li>
+
+          <li class="nav-item"><a class="nav-link"href="blog.html">Blogs</a></li>
+          <li class="nav-item active"><a class="nav-link"href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  <body class="contact">
+    <script type="text/javascript">
+    alert("Thanks so Much!");
+
+    <!-- HIDE FROM INCOMPATIBLE BROWSERS
+    var formData = location.search;
+
+    formData = formData.substring(1, formData.length);
+    while (formData.indexOf("+") != -1) {
+    	formData = formData.replace("+", " ");
+    }
+    formData = unescape(formData);
+    var formArray = formData.split("&");
+    </script>
+    <div class="container">
+      <h1 class="h1contact">Contact</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="socialmedialinks">
+            <li><a href="https://www.instagram.com/nuzulfirdaly/" target="_blank"><img src="./images/instagram.png" height= 100px  width="100px"></a></li>
+            <li><a href="https://www.linkedin.com/in/nuzul-firdaly-4543ab180/?originalSubdomain=sg" target="__blank"><img src="./images/linkedin.png" height= 100px  width="120px"></a></li>
+            <li><a href="https://vsco.co/nuzulfirdaly/gallery" target="_blank"><img src="./images/vsco-logo.png" height= 100px  width="100px"></a></li>
+          </ul>
+          <br>
+          <div class="addresses">
+              <ul>
+                <li><a href="Tel:+65 91814230"><img src="./images/phone.png" alt="phone icon" height="100px" width="100px"><h5>Call Me</h5></a></li>
+                <li> <a href="mailto:204700F@mymail.nyp.edu.sg "><img src="./images/mail.png" alt="mail icon" height="100px" width="100px"><h5>Email Me</h5></a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article id="contactrecieved">
+          <p>Dear <span id="name"></span>, you have sent an email from <span id="Email address"></span> with the subject of <span id="Subject"></span> containing <span id="message" class="blank"></span> </p>
+          <h1><a href="contact.html">Click here to resubmit another form!</a></h1>
+        </article>
+        </div>
+      </div>
+    </div>
+    <script>
+    for (var i=0; i < formArray.length; ++i) {
+
+      para=formArray[i].split("=");
+      switch (para[0]) {
+        case "name":
+                document.getElementById("name").innerHTML=para[1];
+                break;
+        case "Email address":
+                document.getElementById("Email address").innerHTML=para[1];
+                break;
+        case "Subject":
+                document.getElementById("Subject").innerHTML=para[1];
+                break;
+        case "message":
+                document.getElementById("message").innerHTML=para[1];
+                break;
+              }
+
+          }
+    </script>
+  </body>
+</html>

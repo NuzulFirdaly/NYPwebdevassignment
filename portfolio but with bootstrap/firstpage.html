@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="newanimation.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  </head>
+  <body data-spy="scroll" >
+    <script>
+    AOS.init();
+    </script>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top"> <!-- remember to make bg transparent -->
+          <h1 class="logo"><a href="firstpage.html">Nuzul Firdaly</a></h1>
+          <button class="navbar-toggler toggler-example black" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+          <ul class="navbar-nav ml-auto" >
+            <li class="nav-item active "><a class="nav-link" href="#Home">Home</a></li>
+            <li class="nav-item"><a class="nav-link"href="works.html">Works</a></li>
+
+            <li class="nav-item"><a class="nav-link"href="blog.html">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link"href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    </nav>
+  <div id="Home" class="carousel slide" data-ride="carousel" data-interval="7000"><!--SLider -->
+    <ol class="carousel-indicators">
+      <li data-target="#Home" data-slide-to="0" class="active" ></li>
+      <li data-target="#Home" data-slide-to="1" ></li>
+      <li data-target="#Home" data-slide-to="2"></li>
+    </ol>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url('./images/VSCO/grass.jpg'); background-size:cover;" >
+          <div class="carousel-caption text-center"> <!-- words inslide slider -->
+            <h1 class="fade-in">Welcome! Everything is fine!</h1>
+          </div>
+        </div><!-- end of image[0] slide -->
+        <!-- Slide 2-->
+        <div id="AboutMe" class="carousel-item" style="background-image: url('./images/VSCO/2020-02-11 03.04.44 1.jpg'); background-size:cover; position: relative;" >
+          <img class="circle fade-in" src="./images/meNuzul.png" alt="A Picture of Myself">
+            <div class="carousel-caption text-center">
+            <h1>About Me</h1>
+            <p> I am a very goal driven person, i intend to pursue a career on Computer Sciences.</p>
+              <p >I would like to use my new profound proficiencies to solve day to day problems.</p>
+              <br>
+            <p>Details of my Goals will be in my <a href="blog.html#Blogs">Blog</a></p>
+          </div>
+        </div>
+          <!--Slide 3 -->
+        <div id="Experiences" class="carousel-item" style="background-image: url('./images/VSCO/sky.jpg'); background-size:cover;" >
+          <div class="carousel-caption text-center">
+            <ol>
+              <li><strong><a href="https://www.nyp.edu.sg/schools/sit/full-time-courses/information-technology.html" target="_blank">Diploma in Information Technology</a></strong></li>
+                <p>2020 - present</>
+                  <p>Proficiencies to be expected throughout the semesters
+                      <ul>
+                        <li>Full Stack development</li>
+                        <li>Software Engineer</li>
+                        <li>Cloud Practioner</li>
+                        <li>Data Sciences</li>
+                      </ul>
+                  </p>
+                  <br>
+                <li><strong><a href="https://www.ite.edu.sg/courses/course-finder/course/higher-nitec-in-business-information-systems" target="_blank">Higher Nitec in Business Information Systems</a></strong></li>
+                  <p>2018 - 2020</p>
+                  <p>Proficiencies and knowledgeability of Infrastructures</p>
+                    <ul>
+                      <li>Virtualization</li>
+                      <li>Entreprise Networking</li>
+                      <li>Database and Applicaion Development</li>
+                      <li>Business Entreprise Systems</li>
+                    </ul>
+            </ol>
+            <br>
+          </div>
+        </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#Home"role="button" data-slide="prev" > <span class="carousel-control-prev-icon" aria-hidden="true" ></span> </a>
+      <a class="carousel-control-next" href="#Home"role="button" data-slide="next" > <span class="carousel-control-next-icon" aria-hidden="true" ></span> </a>
+
+  </div><!-- end of image slider-->
+
+    <footer><p>Background Images, 2018 Copyright &copy; @NuzulFirdaly All Rights Reserved. <a href="https://vsco.co/nuzulfirdaly/gallery">VSCO</a></p></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>\
+    <script src="newanimationfirst.js" charset="utf-8"></script>
+  </body>
+</html>

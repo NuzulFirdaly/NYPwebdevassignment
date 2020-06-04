@@ -1,0 +1,32 @@
+.fade-in{
+  animation: fadeIn 4s;
+}
+.fade {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity:1;
+  }
+}
+p > span{
+  opacity: 0;
+  transition: all 4s ease;
+}
+
+p > span.fade{
+  opacity:1;
+}
+
+h1 > span{
+  opacity: 0;
+  transition: all 10s ease;
+}
+
+h1> span.fade{
+  opacity:1;
+}

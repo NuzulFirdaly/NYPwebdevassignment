@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&family=Montserrat&family=Abril+Fatface&family=Righteous&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+html{
+  scroll-behavior: smooth;
+
+}
+body{
+  overflow-x: hidden;
+  position: relative;
+}
+body * {
+  transition: all 0.3s ease 0s;
+
+}
+/*.navbar{
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.3)!important;} /* [],[],[],[alpha,whether translucent ornot*/
+.logo a{
+  transition: all 0.3s ease 0s;
+  color: #edf0f1;
+  font-size: 50px;
+  font-family: 'Playball';
+  text-decoration: none;
+}
+.logo a:hover {
+  color:#b3b3b3;
+}
+
+.navbar-nav .nav-item .nav-link{
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  color: #E84545;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  text-align: right;
+}
+.navbar.scrolled{
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.3)!important;
+}
+.carousel-item{
+  height: 100vh;
+}
+.carousel-caption {
+  position: absolute;
+  top: 56%;
+  transform: translateY(-65%);
+  color:#E84545;
+  font-family: fantasy;
+  text-align: justify;
+}
+
+.carousel-caption h1 {
+  font-family: fantasy;
+  font-size: 5em;
+}
+#AboutMe h1{
+    font-family: Montserrat,cursive;
+      font-size: 40px;
+      font-style: oblique;
+      color: #24252A;
+      text-align: right;
+}
+#AboutMe p{
+  text-align: right;
+  font-family: Montserrat,cursive;
+    font-style: italic;
+    font-size: 22px;
+    color: #edf0f1;
+}
+#AboutMe a{
+  text-decoration: none;
+  color: #E84545;
+  font-family: 'Abril Fatface', cursive;
+}
+#AboutMe a:hover{
+  color: #edf0f1;
+}
+#Experiences ol {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color:#E84545;
+  list-style-type: none;
+  text-align:justify;
+}
+#Experiences ol li  {
+  font-family:Montserrat,cursive;
+  font-style: italic;
+  color: #696969;
+}
+#Experiences ol li a{
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #24252A;
+}
+#Experiences ol li a:hover{
+  color:#edf0f1;
+}
+#Experiences p  {
+  font-family:Montserrat,cursive;
+  color: #24252A;
+}
+footer {
+  background-color: #24252A;
+}
+footer p{
+  color: #edf0f1;
+}
+footer a{
+  text-decoration: none;
+  font-family: 'Abril Fatface', cursive;
+  color: #E84545
+}
+#blog{
+  background-color: #000000;
+  display: block;
+  justify-content: space-between;
+  overflow-y: auto;
+  position: relative;
+  overflow-x:hidden;
+  padding:20px;
+}
+#blogintro p{
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+  z-index: -1;
+
+}
+#blogintro hr{
+  width:70%;
+}
+.padding {
+  padding-top:10rem;
+}
+#blogintro ol{
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  position:sticky;
+}
+#blogintro li{
+    display: inline-block;
+    color: inherit;
+    transition: all 0.3s ease 0.0s;
+}
+#blogintro a{
+  text-decoration: none;
+  margin: 10px;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+
+}
+#blogintro a:hover{
+  color: #FFFFFF;
+}
+.card-body{
+  padding: 0;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border:
+}
+hr {
+  border-top: 2px solid #FFFFFF;
+  width: 50%;
+}
+.card-body:hover{
+  transform:scale(1.25);
+  /*box-shadow: 10px 10px 10px 0.1em #d2b29b;*/
+    box-shadow: 0 10px 16px 0 #FFFFFF,0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#work * {
+  box-shadow: none;
+}
+#work .col-md-6 p{
+   font-family: Impact, Charcoal, sans-serif	;
+   color: #444548;
+   font-style: normal;
+}
+#work .padding {
+  padding-top: 500px;
+}
+#films h1{
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+  text-align: center;
+}
+#films .card-body {
+  margin: 40px;
+  font-size: 15px;
+  font-family: Montserrat,cursive;
+  font-style: italic;
+  color: #FFFFFF;
+  background: #24252A;
+}
+.card-body iframe {
+  height: 300px;
+  width: 550px;
+
+}
+#SciTech h1{
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+  text-align: center;
+}
+#SciTech .card-body {
+  margin :40px;
+  font-size: 15px;
+  font-family: Montserrat,cursive;
+  font-style: italic;
+  color: #000000;
+  background: #FFFFFF;
+}
+#music h1{
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+  text-align: center;
+}
+#music .card-body {
+  margin: 40px;
+  font-size: 15px;
+  font-family: Montserrat,cursive;
+  font-style: italic;
+  color: #FFFFFF;
+}
+#stuff h1{
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+  text-align: center;
+}
+#stuff .card-body {
+  margin: 40px;
+  font-size: 15px;
+  font-family: Montserrat,cursive;
+  font-style: italic;
+  color: #FFFFFF;
+  background-color: #222831;
+}
+.contact .container {
+    padding-top:10rem;
+}
+.contact {
+  background-color: #24252A;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:Montserrat,cursive;
+  color:#edf0f1;
+}
+.h1contact{
+  font-size: 7em;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+  text-align: center;
+}
+.Socialmedia {
+  font-family:Montserrat,cursive;
+  font-style: italic;
+  color: #FFFFFF;
+  font-size: 1.8em;
+  text-align: center;
+}
+.Socialmedia{
+  font-family:Montserrat,cursive;
+  font-style: italic;
+  font-size: 22px;
+  color:#FFFFFF;
+}
+.Socialmedia h5{
+  text-align: center;
+}
+.socialmedialinks li {
+  list-style-type: none;
+  font-family:Montserrat,cursive;
+  font-style: italic;
+  display: inline-block;
+  padding: 0px 20px;
+}
+.socialmedialinks a:hover{
+  transition: all 0.3s ease 0s;
+  filter: blur(5px);
+}
+.addresses ul {
+  color: #FFFFFF;
+  list-style-type: none;
+  font-family:Montserrat,cursive;
+  font-size: 22px;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.addresses li:hover{
+  filter: blur(5px)
+}
+.addresses li{
+  color: #FFFFFF;
+  list-style-type: none;
+  font-family:Montserrat,cursive;
+  font-style: italic;
+
+
+}
+.addresses li a h5{
+  font-size: 25px;
+
+}
+.addresses a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #edf0f1;
+}
+.addresses a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.forms *{
+  font-size: 20px;
+}
+.center {
+  text-align: center;
+}
+
+.forms form{
+  margin: 2em 2em 2em 2em;
+  max-width:  350px;
+  background-color: #24252A;
+}
+.forms input, textarea {
+  text-align: left;
+  font-family:Montserrat,cursive;
+  font-style: italic;
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 1px solid #edf0f1;
+  color: #FFFFFF;
+  margin: 10px;
+}
+input [type=submit] {
+  color: #FFFFFF;
+}
+.recieved {
+  margin:80px;
+  font-family: 'Playball',cursive;
+  font-size: 35px;
+}
+
+#contactrecieved span{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#contactrecieved a {
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #edf0f1;
+  text-align: center;
+}
+#contactrecieved a:hover{
+  text-decoration: none;
+  color: #000000;
+}
+#work {
+  background-color: #F5F2D0;
+}
+#info p {
+  font-family: 'Archivo Black', sans-serif;
+  color: #D0021B;
+  text-align:center;
+  font-size: 25px;
+}
+#infosection p {
+  font-family: 'Archivo Black', sans-serif;
+  color: #D0021B;
+  text-align:center;
+  font-size: 25px;
+}
+#program p {
+  font-family: 'Piedra', cursive;
+  color: #466a50;
+  text-align:center;
+  font-size: 25px;
+  padding:10px;
+}
+#work a {
+  text-decoration: none;
+}
+#mybiosection p {
+  text-align: left;
+  font-family:Montserrat,cursive;
+  font-style: italic;
+  color: #FFFFFF;
+}
+#infosection p {
+  text-align: right;
+  font-family:Montserrat,cursive;
+  font-style: italic;
+  color: #FFFFFF;
+}
+.card-text{
+  margin:15px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  font-size: 4em;
+  font-family: 'Abril Fatface', cursive;
+  font-style: italic;
+  color: #d2b29b;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  background: none;
+}
+
+#myBtn:hover {
+  transform: scale(1.5);
+}
+.circle{
+  position: absolute;
+  bottom: 0; /* Place the button at the bottom of the page */
+  right:0;
+}
