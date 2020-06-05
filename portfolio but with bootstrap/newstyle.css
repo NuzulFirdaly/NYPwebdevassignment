@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
 }
 body{
@@ -51,7 +52,9 @@ body * {
   font-family: fantasy;
   text-align: justify;
 }
-
+#Home{
+  height: 100vh;
+}
 .carousel-caption h1 {
   font-family: fantasy;
   font-size: 5em;
@@ -105,7 +108,12 @@ body * {
   color: #24252A;
 }
 footer {
+  position: relative;
   background-color: #24252A;
+  bottom: 0;
+  width: 100%;
+    /* Set the fixed height of the footer here */
+  height: 60px;
 }
 footer p{
   color: #edf0f1;
@@ -440,4 +448,9 @@ input [type=submit] {
   position: absolute;
   bottom: 0; /* Place the button at the bottom of the page */
   right:0;
+}
+@media (max-width: 320px) {
+* {
+      width: 90%;
+     }
 }
