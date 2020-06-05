@@ -451,7 +451,7 @@ input [type=submit] {
 }
 @media only screen and (max-width: 600px) {
   .carousel-caption h1 {
-    font-size: 4em;
+    font-size: 3.5em;
   }
   .h1contact{
     font-size: 4em;
