@@ -14,9 +14,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
+    <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="music.mp3">
+    </audio>
+    <script src="audio.js"></script>
   </head>
-  <body data-spy="scroll" >
+  <body data-spy="scroll" onscroll="music()" >
     <script>
     AOS.init();
     </script>
@@ -46,6 +48,7 @@
         <div class="carousel-item active" style="background-image: url('./images/VSCO/grass.jpg'); background-size:cover;" >
           <div class="carousel-caption text-center"> <!-- words inslide slider -->
             <h1 class="fade-in">Welcome! Everything is fine!</h1>
+
           </div>
         </div><!-- end of image[0] slide -->
         <!-- Slide 2-->
@@ -53,10 +56,11 @@
           <img class="circle fade-in" src="./images/meNuzul.png" alt="A Picture of Myself">
             <div class="carousel-caption text-center">
             <h1>About Me</h1>
-            <p> I am a very goal driven person, i intend to pursue a career on Computer Sciences.</p>
+            <p>I am a very goal driven person, i intend to pursue a career on Computer Sciences.</p>
               <p >I would like to use my new profound proficiencies to solve day to day problems.</p>
               <br>
-            <p>Details of my Goals will be in my <a href="blog.html#Blogs">Blog</a></p>
+          <p>Details of my Goals will be in my <a href="blog.html#Blogs">Blog</a></p>
+          <p>I am also a self-appraised <a href="blog.html#films">film</a> and  <a href="blog.html#music">music</a> connoisseur, Junior <a href="blog.html#SciTech">Technology-Evangelist</a>.</p>
           </div>
         </div>
           <!--Slide 3 -->
@@ -89,13 +93,60 @@
         </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#Home"role="button" data-slide="prev" > <span class="carousel-control-prev-icon" aria-hidden="true" ></span> </a>
-      <a class="carousel-control-next" href="#Home"role="button" data-slide="next" > <span class="carousel-control-next-icon" aria-hidden="true" ></span> </a>
+      <a class="carousel-control-prev"  onclick="music()" href="#Home"role="button" data-slide="prev" > <span class="carousel-control-prev-icon" aria-hidden="true" ></span> </a>
+      <a class="carousel-control-next" onclick="music()" href="#Home"role="button" data-slide="next" > <span class="carousel-control-next-icon" aria-hidden="true" ></span> </a>
 
   </div><!-- end of image slider-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="newanimationfirst.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    function setCookie(c_name,value,exdays)
+{
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+function getCookie(c_name)
+{
+    var i,x,y,ARRcookies=document.cookie.split(";");
+    for (i=0;i<ARRcookies.length;i++)
+    {
+      x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+      y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+      x=x.replace(/^\s+|\s+$/g,"");
+      if (x==c_name)
+        {
+        return unescape(y);
+        }
+      }
+}
+
+var song = document.getElementsByTagName('audio')[0];
+var played = false;
+var tillPlayed = getCookie('timePlayed');
+function update()
+{
+    if(!played){
+        if(tillPlayed){
+        song.currentTime = tillPlayed;
+        song.play();
+        played = true;
+        }
+        else {
+                song.play();
+                played = true;
+        }
+    }
+
+    else {
+    setCookie('timePlayed', song.currentTime);
+    }
+}
+setInterval(update,1000);
+    </script>
   </body>
   <footer><p style="text-align:center;">Background Images, 2018 Copyright &copy; @NuzulFirdaly All Rights Reserved. <a href="https://vsco.co/nuzulfirdaly/gallery">VSCO</a></p></footer>
 

@@ -22,12 +22,26 @@
 
           <li class="nav-item"><a class="nav-link"href="blog.html">Blogs</a></li>
           <li class="nav-item active"><a class="nav-link"href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link"href="easter egg.html"></a></li>
         </ul>
       </div>
     </nav>
   <body class="contact">
     <script type="text/javascript">
-    alert("Thanks so Much!");
+    var d =new Date();
+    var day= d.getDate();
+    var month = d.getMonth()+1;
+    var year = d.getFullYear();
+    var h = d.getHours();
+    var m = d.getMinutes();
+    var s = d.getSeconds();
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+  }
+  m = checkTime(m);
+  s = checkTime(s);
+    alert("Thanks so Much! Received on " + day+"-"+month+"-"+year + " at " +h+":"+ m + ":"+s);
 
     <!-- HIDE FROM INCOMPATIBLE BROWSERS
     var formData = location.search;
@@ -60,8 +74,11 @@
           <article id="contactrecieved">
           <p>Dear <span id="name"></span>, you have sent an email from <span id="Email address"></span> with the subject of <span id="Subject"></span> containing <span id="message" class="blank"></span> </p>
           <h1><a href="contact.html">Click here to resubmit another form!</a></h1>
+            <p><a class="nav-link"href="easter egg.html">Click here for a surprise</a><p>
         </article>
         </div>
+
+
       </div>
     </div>
     <script>

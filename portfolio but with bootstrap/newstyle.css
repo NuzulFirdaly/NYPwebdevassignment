@@ -75,7 +75,7 @@ body * {
 }
 #AboutMe a{
   text-decoration: none;
-  color: #E84545;
+  color: #d2b29b;
   font-family: 'Abril Fatface', cursive;
 }
 #AboutMe a:hover{
@@ -471,4 +471,19 @@ input [type=submit] {
     height:20%;
     width: 65%;
   }
+  #AboutMe p{
+      font-size: 10px;
+  }
+  .card-body p {
+    font-size: 10px;
+  }
+}
+#contactrecieved p a{
+  color:#fff; font-style:cursive;
+}
+#contactrecieved p a:hover{
+  color: #000;
+}
+#funnybutton:hover {
+    transform: scale(1.2);
 }

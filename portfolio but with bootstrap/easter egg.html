@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>easter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="textanimation.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body id="easter">
+    <style media="screen">
+       #funnybutton:hover {
+        transform: scale(1.2);
+      }
+    </style>
+    <script type="text/javascript">
+    </script>
+    <audio id="audioplayer" autobuffer="" loop="true" preload="auto" src="rubberband.mp3">
+      </audio>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top"> <!-- remember to make bg transparent -->
+        <h1 class="logo"><a href="firstpage.html">Nuzul Firdaly</a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive" >
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item "><a class="nav-link" href="firstpage.html#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link"href="works.html">Works</a></li>
+
+          <li class="nav-item"><a class="nav-link"href="blog.html">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link"href="contact.html">Contact</a></li>
+          <li class="nav-item active"><a class="nav-link"href="easter egg.html"></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-md-12 center" id="funnybutton" data-aos="fade-up-right" data-aos-duration="2000">
+        <button class="button"type="button" onclick="music()" name="button">CLICK IT I DARE YOU, I DOUBLE DARE YOU</button>
+      </div>
+      <div id="myDIV" class="text-animation col-md-12 center padding">
+        <span class="one">SUPRISE</span>
+        <span class="two">it</span>
+        <span class="three">NUZUL</span>
+        <span class="four"><video id="video"src="dance.mp4" loop controls muted autoplay></video></span>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="textanimation.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+
+  </body>
+</html>
